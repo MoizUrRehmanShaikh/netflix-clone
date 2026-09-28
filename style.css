@@ -1,0 +1,424 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sansita", sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+/* MAIN */
+
+.main {
+    background: url("assets/images/abg.jpg");
+
+    background-position: center center;
+
+    background-size: max(1200px, 100vw);
+
+    height: 80vh;
+
+    position: relative;
+}
+
+
+/* BLACK OVERLAY */
+
+.main .box {
+    height: 80vh;
+
+    width: 100%;
+
+    opacity: 0.69;
+
+    position: absolute;
+
+    top: 0;
+
+    background-color: black;
+}
+
+
+/* NAVBAR */
+
+nav {
+    max-width: 80vw;
+
+    justify-content: space-between;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    height: 62px;
+}
+
+
+nav img {
+    width: 120px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+nav button {
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* HERO */
+
+.hero {
+    height: calc(100% - 62px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    color: white;
+
+    position: relative;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+.hero > :first-child {
+    font-size: 50px;
+
+    font-weight: 900;
+
+    text-align: center;
+}
+
+
+.hero > :nth-child(3) {
+    font-weight: 700;
+
+    font-size: 24px;
+
+    text-align: center;
+}
+
+
+.hero > :nth-child(5) {
+    font-weight: 700;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+
+.main input {
+    padding: 12px 14px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+
+    background-color: rgba(23, 23, 23, 0.7);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    width: 300px;
+}
+
+
+.main input::placeholder {
+    color: #ddd;
+}
+
+
+/* BUTTON */
+
+.btn {
+    padding: 8px 15px;
+
+    font-weight: bold;
+
+    background-color: red;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #c80000;
+}
+
+
+.red-sm {
+    font-size: 16px;
+}
+
+
+.hero-buttons .red-sm {
+    padding: 10px 20px;
+
+    font-size: 18px;
+}
+
+
+/* SEPARATION */
+
+.separation {
+    height: 7px;
+
+    background-color: rgba(255, 18, 18, 0.291);
+}
+
+
+/* SECTION */
+
+section {
+    max-width: 80vw;
+
+    margin: auto;
+
+    color: white;
+
+    padding: 50px 0;
+}
+
+
+.section {
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.section span:first-child {
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.section span:last-child {
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+/* FAQ */
+
+.faqbox {
+    background-color: black;
+
+    color: white;
+
+    padding: 34px;
+
+    max-width: 80vw;
+
+    margin: auto;
+}
+
+
+.faqbox h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+.faq-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #333;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.faq-item:hover {
+    background-color: #444;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 30px;
+
+    color: white;
+
+    max-width: 80vw;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+
+.footer-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-item span {
+    margin-bottom: 10px;
+}
+
+
+.footer-item a {
+    color: #aaa;
+
+    text-decoration: underline;
+
+    font-size: 14px;
+}
+
+
+.footer-item a:hover {
+    color: white;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .main {
+        height: 90vh;
+    }
+
+
+    .hero > :first-child {
+        font-size: 32px;
+    }
+
+
+    .hero > :nth-child(3) {
+        font-size: 20px;
+    }
+
+
+    .hero > :nth-child(5) {
+        font-size: 15px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        align-items: center;
+    }
+
+
+    .main input {
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+
+    .hero-buttons .red-sm {
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+
+    nav img {
+        width: 100px;
+    }
+
+
+    .hero > :first-child {
+        font-size: 28px;
+    }
+
+
+    .section span:first-child {
+        font-size: 28px;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+}
